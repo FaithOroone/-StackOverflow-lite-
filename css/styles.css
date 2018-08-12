@@ -1,0 +1,106 @@
+body{
+    background-image:url(../images/bg1.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: contain;
+    background-color: royalblue;
+    
+}
+.container {
+	width:100%;
+	margin: 0 auto;
+}
+h1{
+	color:#080808;
+	font-size: 32px	;
+	font-family: 'Lato', sans-serif;
+	
+}
+h3{
+    text-align: center;
+    color: #ea2410;
+    font-family: 'Lato', sans-serif;
+	font-size: 32px;	
+	padding: 15px 0px 15px 0px;
+	margin: 0 0 4em 0;
+}
+.company-logo img{
+	margin: 0px 15px 0px 20px;
+	width: auto;
+	max-height: 80px;
+	padding: 0;
+}
+.company-logo h1{
+	margin-left: 15px,
+}
+.company-logo img,.company-logo h1{
+	float: left;
+}
+.menu{
+	font:1em Georgia;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.menu li{
+	display:inline-block;
+	padding: 5px 15px 4px 15px;
+}
+.menu li a{
+	color: #333333;
+	text-decoration: none;
+	line-height: 3em;
+}
+.menu li a:hover {
+	color: #992211;
+}
+.menu li.selected{
+	background:#333333;
+}
+.menu li.selected a{
+	color:#fff;
+}
+.home-content h1 {
+    text-align: center;
+	border-bottom: 2px solid#080808;
+	border-top:2px solid#080808;
+	color: #080808;
+	font-family: 'Lato', sans-serif;
+	font-size: 32px;	
+	line-height: 4em;
+	padding: 15px 0px 15px 0px;
+	margin: 0 0 4em 0;
+}
+p{
+    color:#ea2410;
+	font-family: "Poppins",sans-serif;
+	font-size: 24px;
+	max-width: 1000px;
+	text-transform: uppercase;
+	margin: 3em auto 3em auto;
+}
+button{
+	width: 40%;
+    height: 70px;
+    padding: 15px;
+    cursor: pointer;
+    font-family:"Poppins",sans-serif;
+    text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: #18862f;
+	border: 1px solid #fff;
+    color: #ffffff;
+    position: relative;
+}
+button:hover{
+	color: #992211;
+    border: 1px solid #992211;
+    background-color: #cfc ;
+}
+a:hover {
+    color:#992211;
+  }
