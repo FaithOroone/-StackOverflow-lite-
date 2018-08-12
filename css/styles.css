@@ -164,5 +164,41 @@ form input[type="text"],form input[type="password"],form input[type="email"],tex
 	text-align: center;
 	font-size: 22px;
 }
+/*login*/
+.logint{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.loginb{
+	width: 85%;
+    padding: 15px;
+    cursor: pointer;
+    font-family:"Poppins",sans-serif;
+    text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: #18862f;
+	border: 1px solid #fff;
+    color: #ffffff;
+    position: relative;
+}
+.loginlab{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginform{
+	width:40%;
+	color:white;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing:border-box;
+	background: #080808;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
 
 
