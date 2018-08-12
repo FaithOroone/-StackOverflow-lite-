@@ -36,6 +36,7 @@ h3{
 .company-logo img,.company-logo h1{
 	float: left;
 }
+/*navigation*/
 .menu{
 	font:1em Georgia;
 	list-style: none;
@@ -64,6 +65,7 @@ h3{
 .menu li.selected a{
 	color:#fff;
 }
+/*home content*/
 .home-content h1 {
     text-align: center;
 	border-bottom: 2px solid#080808;
@@ -103,4 +105,75 @@ button:hover{
 }
 a:hover {
     color:#992211;
-  }
+}
+/*signup*/
+form{
+	padding: 30px;
+	box-sizing: border-box;
+}
+.signupform{
+	width:40%;
+	color:white;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing:border-box;
+	background: #080808;
+	margin-top: 40%;
+	margin-bottom: 20%;
+}
+.signuplab{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+form input[type="text"],form input[type="password"],form input[type="email"],textarea,form select{
+	padding: 15px;
+	width: 80%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	margin-bottom: 20px;
+}
+form input[type="submit"]{
+	width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    font-family:"Poppins",sans-serif;
+    text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: #18862f;
+	border: 1px solid #fff;
+    color: #ffffff;
+    position: relative;
+}
+.userp{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	top: -50px;
+	left: calc(50% -50px);
+}
+.signupt{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+/*footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #292929;
+}
+footer li{
+	text-align: left;
+	list-style: none;
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+
