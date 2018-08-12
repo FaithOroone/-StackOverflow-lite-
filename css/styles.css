@@ -138,7 +138,7 @@ form input[type="text"],form input[type="password"],form input[type="email"],tex
 	outline: none;
 	margin-bottom: 20px;
 }
-form input[type="submit"]{
+.signupb{
 	width: 100%;
     padding: 15px;
     cursor: pointer;
@@ -164,16 +164,5 @@ form input[type="submit"]{
 	text-align: center;
 	font-size: 22px;
 }
-/*footer*/
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #292929;
-}
-footer li{
-	text-align: left;
-	list-style: none;
-	margin-left: 20px;
-	line-height: 1.6em;
-}
+
 
