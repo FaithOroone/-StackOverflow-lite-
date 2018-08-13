@@ -236,8 +236,25 @@ form input[type="text"],form input[type="password"],form input[type="email"],tex
     color: #ffffff;
     position: relative
 }
-li{
+list{
 	font-family: "Poppins",sans-serif;
 	font-size: 25px;
 }
+/*questions*/
+.question{
+	width:50%;
+	color:black;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing:border-box;
+	background: darkgray;
+	margin-top:20%;
+	margin-bottom: 20%;
+}
+.img{
+	width: 50px;
+}
+
 
