@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">      
+		<title>StackOverflow-lite</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="javascript/scripts.js"></script>
+	</head>
+	<!--BODY-->
+	<body class="home-page">
+        <div class="container">
+            <!--Header-->
+		    <header class="header">
+                <div class="company-logo">
+                    <img src="images/logo.png" alt="company-logo">
+                    <h1>StackOverflow-lite</h1><span class="clear"></span>
+                </div>
+                <!--Navigation-->
+			    <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="selected"><a href="user_dashboard.html">user_dashboard</a></li>
+                        <li><a href="answers.html">Answers</a></li>
+                        <li><a href="notification.html">Notifications</a></li>
+                        <li><a href="questions.html">Ask a question</a></li>
+                        <li><a href="#"><input type="text" placeholder="search"></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <h1>Recently Asked Questions</h1>
+            <div>
+                <ol>
+                    <li>What ia a computer?</li>
+                    <h4 id="answer1"> A computer is an electronic device that manipulates information, or data. 
+                        It has the ability to store, retrieve, and process data.
+                        A computer is an electronic device that manipulates information, or data. 
+                        It has the ability to store, retrieve, and process data.
+                        A computer is an electronic device that manipulates information, or data. 
+                        It has the ability to store, retrieve, and process data <button class="qn"><a href="answer.html">Add an answer</a></button> <button class="qn">Vote</button>  <button class="qn">Downvote</button></h4>
+                    <button onclick="myFunction()" class="qn">Answer</button> 
+                    <li>what is programming?</li>
+                    <h4 id="answer2"> Computer Programming involves writing instructions that the computer can understand and execute.
+                    Computer Programming involves writing instructions that the computer can understand and execute.
+                    Computer Programming involves writing instructions that the computer can understand and execute.
+                    Computer Programming involves writing instructions that the computer can understand and execute.
+                    <button class="qn"><a href="answer.html">Add an answer</a></button>  <button class="qn">Vote</button>  <button class="qn">Downvote</button></h4>
+                    <button onclick="myAnswer2()" class="qn">Answer</button> 
+                    <li>What is javascript?</li>
+                    <h4 id="answer3"> JavaScript is a scripting language designed primarily for adding interactivity to Web pages and creating Web applications.
+                        JavaScript is a scripting language designed primarily for adding interactivity to Web pages and creating Web applications.
+                        JavaScript is a scripting language designed primarily for adding interactivity to Web pages and creating Web applications.
+                        JavaScript is a scripting language designed primarily for adding interactivity to Web pages and creating Web applications.
+                    <button class="qn"><a href="answer.html">Add an answer</a></button> <button class="qn">Vote</button>  <button class="qn">Downvote</button></h4>
+                    <button onclick="myAnswer()" class="qn">Answer</button>
+                    </h4>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
