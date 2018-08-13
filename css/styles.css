@@ -256,5 +256,15 @@ list{
 .img{
 	width: 50px;
 }
+/*answer*/
+.answerinput{
+	width: 80%;
+    padding: 15px;
+    font-family:"Poppins",sans-serif;
+	font-size: 1.5em;
+	border: 1px solid black;
+    color: black;
+    position: relative;
+}
 
 
