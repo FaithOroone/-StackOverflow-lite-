@@ -200,5 +200,44 @@ form input[type="text"],form input[type="password"],form input[type="email"],tex
 	margin-top: 20%;
 	margin-bottom: 20%;
 }
-
+/* recently asked questions*/
+#answer1{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color:#080808;
+	margin-top: 20px;
+	display: none;
+}
+#answer2{
+	width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color:#080808;
+	margin-top: 20px;
+	display: none;
+}
+#answer3{
+	width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color:#080808;
+	margin-top: 20px;
+	display: none
+}
+.qn{
+	width: 15%;
+    padding: 15px;
+    cursor: pointer;
+    font-family:"Poppins",sans-serif;
+	font-size:15px;
+	background-color: #18862f;
+	border: 1px solid #fff;
+    color: #ffffff;
+    position: relative
+}
+li{
+	font-family: "Poppins",sans-serif;
+	font-size: 25px;
+}
 
