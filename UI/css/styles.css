@@ -4,7 +4,7 @@ body{
     background-size: cover;
     background-position: contain;
     background-color: royalblue;
-    
+
 }
 .container {
 	width:100%;
@@ -14,13 +14,13 @@ h1{
 	color:#080808;
 	font-size: 32px	;
 	font-family: 'Lato', sans-serif;
-	
+
 }
 h3{
     text-align: center;
     color: #ea2410;
     font-family: 'Lato', sans-serif;
-	font-size: 32px;	
+	font-size: 32px;
 	padding: 15px 0px 15px 0px;
 	margin: 0 0 4em 0;
 }
@@ -72,7 +72,7 @@ h3{
 	border-top:2px solid#080808;
 	color: #080808;
 	font-family: 'Lato', sans-serif;
-	font-size: 32px;	
+	font-size: 32px;
 	line-height: 4em;
 	padding: 15px 0px 15px 0px;
 	margin: 0 0 4em 0;
