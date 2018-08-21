@@ -3,7 +3,7 @@ import json
 from question.views import app
 from unittest import TestCase
 
-class LoginTest(TestCase):
+class GetQuestionTest(TestCase):
     def setUp(self):
         self.app = app.test_client()
         self.user_data = {
