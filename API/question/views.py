@@ -4,7 +4,7 @@ import re
 
 app = Flask(__name__)
 #post a question
-@app.route('/api/v1/users/questions', methods=['POST'])
+@app.route('/api/v1/questions', methods=['POST'])
 def post_aquestion():
 	request_data = request.get_json()
 	if not request_data:
@@ -14,7 +14,7 @@ def post_aquestion():
 	username = str(request_data.get('username'))
 	question = str(request_data.get('question'))
 
-	if not question_id or question_id == type(str) or question_id == " ":
+	if not question_id or question_id == " ":
     		return jsonify({'message':'A valid question_id is required'}), 400
 
 	if not username or username == type(int) or username == " " or len(username) < 3:
@@ -28,9 +28,22 @@ def post_aquestion():
 
 
 #get questions
-@app.route('/api/v1/user/question', methods=["GET"])
+@app.route('/api/v1/question', methods=["GET"])
 def fetch_questions():
     if len(questions)>0:
         return jsonify({"message":questions}), 302
     else:
         return jsonify({"message":"There are no questions found"}),404
+
+#fetch a specific question
+@app.route('/api/v1/question/<int:question_id>', methods=['GET'])
+def get_a_question():
+    question = {}
+    for question in questions:
+        if question['question_id'] == question_id:
+            question = {
+                'username': question['username'],
+                'question': question['question']
+            }
+    return jsonify({'message':'you have fetched a question'}), 302
+
