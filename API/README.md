@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/FaithOroone/StackOverflow-lite.svg?branch=challenge2)](https://travis-ci.org/FaithOroone/StackOverflow-lite)
 # StackOverflow-lite-API
 
 ## Description
