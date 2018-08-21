@@ -1,0 +1,27 @@
+from flask import Flask, request, jsonify, make_response
+from models import Question, questions
+import re
+
+app = Flask(__name__)
+#post a question
+@app.route('/api/v1/users/questions', methods=['POST'])
+def post_aquestion():
+	request_data = request.get_json()
+	if not request_data:
+		return jsonify({'message':'please ask a question'}), 400
+
+	question_id = request_data.get('question_id')
+	username = str(request_data.get('username'))
+	question = str(request_data.get('question'))
+
+	if not question_id or question_id == type(str) or question_id == " ":
+    		return jsonify({'message':'A valid question_id is required'}), 400
+
+	if not username or username == type(int) or username == " " or len(username) < 3:
+		return jsonify({'message':'name is required'}), 400
+
+	if not question or question == type(int) or question == "" or len(question) < 3:
+		return jsonify({'message':'question is required'}), 400
+
+	questions.append(request_data)
+	return jsonify({"message":"you have posted your first question"}), 201
