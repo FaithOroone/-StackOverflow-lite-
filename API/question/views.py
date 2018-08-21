@@ -25,3 +25,12 @@ def post_aquestion():
 
 	questions.append(request_data)
 	return jsonify({"message":"you have posted your first question"}), 201
+
+
+#get questions
+@app.route('/api/v1/user/question', methods=["GET"])
+def fetch_questions():
+    if len(questions)>0:
+        return jsonify({"message":questions}), 302
+    else:
+        return jsonify({"message":"There are no questions found"}),404
