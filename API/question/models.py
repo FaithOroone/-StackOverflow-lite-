@@ -1,6 +1,6 @@
 class Question():
     def __init__(self, question_id, username, question):
-        self.question_id = question_id
+        self.question_id = 0
         self.username = username
         self.question = question
 

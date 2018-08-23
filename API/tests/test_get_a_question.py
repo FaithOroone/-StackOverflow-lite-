@@ -8,7 +8,7 @@ class GetaQuestionTest(TestCase):
     def setUp(self):
         self.app = app.test_client()
         self.request_data = {
-            "question_id":"question_id",
+            "question_id":"1",
             "username":"username",
             "question":"question"
         }
@@ -17,7 +17,7 @@ class GetaQuestionTest(TestCase):
         response = self.app.post('/api/v1/questions', data = json.dumps(self.request_data), content_type = 'application/json')
         self.assertEqual(response.status_code, 201)
         response = self.app.get('/api/v1/question/<int:question_id>', data = json.dumps(self.request_data), content_type = 'application/json')
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 200)
 
     if __name__ == '__main__':
         unittest.main
