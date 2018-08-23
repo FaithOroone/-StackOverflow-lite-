@@ -1,6 +1,6 @@
 from flask import Flask, Response, request, jsonify, make_response
 from models import Question, Answer, questions, answers
-import re
+
 
 app = Flask(__name__)
 #post a question
@@ -10,7 +10,7 @@ def post_aquestion():
 	if not request_data:
 		return jsonify({'message':'please ask a question'}), 400
 
-	question_id = request_data.get('question_id')
+	question_id = Question.get_question_id
 	username = str(request_data.get('username'))
 	question = str(request_data.get('question'))
 
@@ -24,7 +24,7 @@ def post_aquestion():
 		return jsonify({'message':'question is required'}), 400
 
 	questions.append(request_data)
-	return jsonify({"message":"you have posted your first question"}), 201
+	return jsonify({"message":questions}), 201
 
 
 #get questions
@@ -33,7 +33,7 @@ def fetch_questions():
     if len(questions)>0:
         return jsonify({"message":questions}), 302
     else:
-        return jsonify({"message":"There are no questions found"}),404
+        return jsonify({"message":"There are no questions found"}),
 
 #fetch a specific question
 @app.route('/api/v1/question/<int:question_id>', methods=['GET'])

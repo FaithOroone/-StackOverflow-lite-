@@ -1,11 +1,13 @@
+questions =[]
+
 class Question():
     def __init__(self, question_id, username, question):
-        self.question_id = 12345
+        self.question_id = 0
         self.username = username
         self.question = question
 
     def get_question_id(self):
-            return self.question_id
+        return self.question_id
 
     def get_username(self):
             return self.username
@@ -13,7 +15,7 @@ class Question():
     def get_question(self):
             return self.question
 
-questions =[]
+
 
 class Answer():
         def __init__(self, answer_id, question_id, answer, answered_by):
