@@ -1,7 +1,8 @@
-import unittest
 import json
-from question.views import app
+import unittest
 from unittest import TestCase
+
+from question.views import app
 
 class GetaQuestionTest(TestCase):
     def setUp(self):

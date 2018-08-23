@@ -8,7 +8,7 @@ app = Flask(__name__)
 def post_aquestion():
 	request_data = request.get_json()
 	if not request_data:
-		return jsonify({'message':'please ask a question'}), 400
+    		return jsonify({'message':'please ask a question'}), 400
 
 	question_id = request_data.get('question_id')
 	username = str(request_data.get('username'))
