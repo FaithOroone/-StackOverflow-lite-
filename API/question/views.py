@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify, make_response
-from models import Question, questions
+from flask import Flask, Response, request, jsonify, make_response
+from models import Question, Answer, questions, answers
 import re
 
 app = Flask(__name__)
@@ -46,4 +46,25 @@ def get_a_question():
                 'question': question['question']
             }
     return jsonify({'message':'you have fetched a question'}), 302
+
+#add an answer
+@app.route('/api/v1/question/<question_id>/answer', methods=['POST'])
+def add_an_answer(question_id):
+    request_data= request.get_json()
+    valid_qna=request.get('valid_qna')
+    answer_id = len(answers)+ 1
+
+    if (valid_qna(request_data)):
+        qna ={
+            'answer_id': answer_id,
+            'question_id':request_data.get('question_id'),
+            'answered_by':request_data.get('answered_by'),
+            'answer':request_data.get('answer'),
+
+        }
+        answers.append(qna)
+        response =Response("",201, mimetype="application/json")
+        response.headers['Location']="answers/" + str(request_data['question_id'])
+        return response
+
 
