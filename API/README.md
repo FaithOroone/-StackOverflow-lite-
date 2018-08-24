@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/FaithOroone/StackOverflow-lite.svg?branch=challenge2)](https://travis-ci.org/FaithOroone/StackOverflow-lite)
+[![Coverage Status](https://coveralls.io/repos/github/FaithOroone/StackOverflow-lite/badge.svg?branch=challenge2)](https://coveralls.io/github/FaithOroone/StackOverflow-lite?branch=challenge2)
 # StackOverflow-lite-API
 
 ## Description

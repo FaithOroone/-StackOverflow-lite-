@@ -45,7 +45,7 @@ def get_a_question(question_id):
     return jsonify({'message':question}), 200
 
 @app.route('/api/v1/questions/<question_id>/answers', methods =['POST'])
-def add_an_answer():
+def add_an_answer(answer_id):
 	request_data = request.get_json()
 	answer_id = len(answers) + 1
 	question_id = request_data.get('question_id')
