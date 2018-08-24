@@ -25,15 +25,15 @@ def post_aquestion():
 
 
 #get questions
-@app.route('/api/v1/question', methods=["GET"])
+@app.route('/api/v1/questions', methods=["GET"])
 def fetch_questions():
     if len(questions)>0:
         return jsonify({"message":questions}), 200
-    #else:
-        #return jsonify({"message":"There are no questions found"}),404
+    else:
+        return jsonify({"message":"There are no questions found"}),404
 
 #fetch a specific question
-@app.route('/api/v1/question/<int:question_id>', methods=['GET'])
+@app.route('/api/v1/questions/<int:question_id>', methods=['GET'])
 def get_a_question(question_id):
     for question in questions:
         if question['question_id'] == question_id:
