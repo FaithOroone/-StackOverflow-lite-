@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify, make_response
-from models import Question, questions
+from flask import Flask, Response, request, jsonify, make_response
+from models import Question, Answer, answers, questions
 
 app = Flask(__name__)
 #post a question
@@ -43,4 +43,23 @@ def get_a_question(question_id):
                 'question': question['question']
             }
     return jsonify({'message':question}), 200
+
+@app.route('/api/v1/questions/<question_id>/answers', methods =['POST'])
+def add_an_answer():
+	request_data = request.get_json()
+	answer_id = len(answers) + 1
+	question_id = request_data.get('question_id')
+	answered_by = request_data.get('answered_by')
+	answer = str(request_data.get('answer'))
+
+	if not request_data:
+    		return jsonify({'message':'please add your question'}),400
+
+	if request_data:
+
+        	answers.append(request_data)
+        response =Response("",201, mimetype="application/json")
+        response.headers['Location']="answers/" + str(request_data['question_id'])
+        return response
+
 
